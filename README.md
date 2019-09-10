@@ -4,6 +4,7 @@
 ***Open cmd in UI folder and type command "npm install" and than "ng serve" , after that open browser and go to "http://localhost:4200"***<br>
 ***Open secured-app folder with your IDE and run main class (SecuredAppApplication)***
 
+If you want to check out the database go to "http://localhost:8080/h2-console" with username "sa" and empty password
 You can only sell an item if you create a "seller" user !!!
 
 ***To be fixed:***
