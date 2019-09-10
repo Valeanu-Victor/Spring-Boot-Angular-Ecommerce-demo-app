@@ -29,7 +29,6 @@
             <div class="controls">
                 <input type="number" name="price" placeholder="" class="input-xlarge"
                     [(ngModel)]='price'>
-                <p class="help-block">Product price should be at least 4 characters</p>
             </div>
         </div>
 
@@ -39,13 +38,12 @@
             <div class="controls">
                 <input type="number" name="quantity" placeholder="" class="input-xlarge"
                     [(ngModel)]='quantity'>
-                <p class="help-block">Product quantity should be at least 4 characters</p>
             </div>
         </div>
 
         <div class="control-group">
             <!-- Button -->
-            <div class="controls">
+            <div id="button" class="controls">
                 <button (click)='insertItem()' class="btn btn-success">Sell Now!</button>
             </div>
         </div>
