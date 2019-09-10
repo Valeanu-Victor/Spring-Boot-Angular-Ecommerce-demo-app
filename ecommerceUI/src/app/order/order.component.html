@@ -1,0 +1,39 @@
+<h1>Your cart products!</h1>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="display: none">idOrderDetails</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Remove Product</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td style="display: none">{{order.idOrderDetails}}</td>
+        <td>{{order.itemId}}</td>
+        <td>{{order.itemName}}</td>
+        <td>{{order.category}}</td>
+        <td>{{order.quantity}}</td>
+        <td>{{order.price | currency}}</td>
+        <td> <button (click)="removeOrder(this.order)" class="btn btn-warning" id="remove">Remove</button></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <div id="totalCost">
+    <h3 >Total Cost: {{totalCost | currency}}</h3>
+  </div>
+
+  <div id="checkout">
+      <button (click)="checkoutOrder()" class="btn btn-success" id="checkout">Checkout</button>
+  </div>
+
+</div>

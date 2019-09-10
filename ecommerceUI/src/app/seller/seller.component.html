@@ -1,0 +1,53 @@
+<form class="form-horizontal" action='' method="POST">
+    <fieldset>
+        <div id="legend">
+            <legend style="font-size: 35px">Sell a product!</legend>
+        </div>
+        <div class="control-group">
+            <!-- Product Name -->
+            <label class="control-label" for="Product Name" id="name">Name</label>
+            <div class="controls">
+                <input type="text" name="name" placeholder="" class="input-xlarge"
+                    [(ngModel)]='name'>
+                <p class="help-block">Product Name can contain any letters or numbers, without spaces</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Product Category -->
+            <label class="control-label" for="Product Category" id="category">Category</label>
+            <div class="controls">
+                <input type="text" name="category" placeholder="" class="input-xlarge"
+                    [(ngModel)]='category'>
+                <p class="help-block">Product category should be at least 3 characters</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Product price -->
+            <label class="control-label" for="Product Price" id="price">Price ($)</label>
+            <div class="controls">
+                <input type="number" name="price" placeholder="" class="input-xlarge"
+                    [(ngModel)]='price'>
+                <p class="help-block">Product price should be at least 4 characters</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Product quantity -->
+            <label class="control-label" for="quantity" id="quantity">Quantity</label>
+            <div class="controls">
+                <input type="number" name="quantity" placeholder="" class="input-xlarge"
+                    [(ngModel)]='quantity'>
+                <p class="help-block">Product quantity should be at least 4 characters</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+                <button (click)='insertItem()' class="btn btn-success">Sell Now!</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
