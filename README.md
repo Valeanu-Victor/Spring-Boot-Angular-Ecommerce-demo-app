@@ -1,5 +1,5 @@
 # Spring-Boot-Angular-Ecommerce-demo-app
-  This demo e-commerce web app is a work-in-progress personal project. Frontend is Angular 7, Backend is Spring Boot with JWT security and for the database I have implemented h2 for now.
+  This demo e-commerce web app is my first personal project. Frontend is Angular 7, Backend is Spring&Spring Boot and for the database I have implemented h2 in-memory DB.
 
 ***Open cmd in UI folder and type command "npm install" and than "ng serve" , after that open browser and go to "http://localhost:4200"***<br>
 ***Open secured-app folder with your IDE and run main class (SecuredAppApplication)***
